@@ -27,10 +27,26 @@ print(list2)
 
 print(39 in list1)
 
+#New list functions
 list3=[86,23,76,11,49]
 print(list3)
 list3.sort()
 print(list3)
+
+print(type(list3))
+list3.append(55)
+list3.extend([72,93,11])
+print("Index of 55 is ",list3.index(55))
+print("Max of list:",max(list3))
+print("Min of list:",min(list3))
+print("Sum of list:",sum(list3))
+print("count of 11 in list",list3.count(11))
+#This fun do not work in python 3.x
+"""
+l1=[91,12,34]
+l2=[87,56,33]
+print("Comapring list ",cmp(l1,l2))
+"""
 
 
 
