@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Inventory Management System</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+			crossorigin="anonymous">
+	</head>
+	<body style="background-image: url('/img/IMS.png');">
+
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-6 container justify-content-center card border-primary" style="opacity: 0.90; margin-top:0%">
+				
+					<h1 class="text-center">Update Product</h1>
+					<div class="card-body">
+						<form action="" method="POST">
+							<div class="form-group">
+								<label>Student id:</label>
+								<input type="text"
+									name="id"
+									class="form-control"
+									placeholder="Enter Student id"
+                                    value="{{student['id']}}"/>
+							</div>
+							<div class="form-group">
+								<label>Student Name:</label>
+								<input type="text"
+									name="name"
+									value="{{student['name']}}"
+									class="form-control"
+									placeholder="Enter student Name"/>
+							</div>
+							<div class="form-group">
+								<label>Address</label>
+								<input type="text"
+									name="address"
+									value="{{student['address']}}"
+									class="form-control"
+									placeholder="Enter address"/>
+							</div>
+							<div class="form-group">
+								<label>Marks:</label>
+								<input type="number"
+									name="marks"
+									value="{{student['marks']}}"
+									class="form-control"
+									placeholder="Enter marks"/>
+							</div>
+							<div class="box-footer">
+								<button type="submit" class="btn btn-primary" method="PUT">Submit</button>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
